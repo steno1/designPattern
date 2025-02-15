@@ -18,7 +18,7 @@ git clone https://github.com/steno1/designPattern.git
 
 Navigate to the project directory:
 
-cd designpattern
+cd designPattern
 
 Run the script:
 
@@ -37,7 +37,6 @@ Dial a phone number, triggering notifications to observers.
 Add or remove observers that receive updates on dialing events.
 
 Example:
-
 // Create Telephone object
 const telephone = new Telephone();
 
@@ -73,7 +72,6 @@ Observer: Defines how to react to dial notifications.
 notifyObservers(): Sends updates to all registered observers.
 
 🧪 Example Output
-
 Phone number 2347023232 added.
 Phone number 2348031234567 added.
 Dialling 2347023232...
