@@ -1,42 +1,45 @@
-Observer Pattern Example
+# 📞 Observer Pattern Example
 
-📜 Overview
+## 📜 Overview
+This project demonstrates the **Observer Pattern** using a telephone system. The Observer Pattern allows multiple objects (**observers**) to react when the state of another object (**subject**) changes.
 
-This project demonstrates the Observer Pattern using a telephone system. The Observer Pattern allows multiple objects (observers) to react when the state of another object (subject) changes.
+---
 
-🛠️ Files
+## 🛠️ Files
+- `telephone.js` - Contains the implementation of the Observer Pattern.
 
-telephone.js - Contains the implementation of the Observer Pattern.
+---
 
-🚀 Getting Started
+## 🚀 Getting Started
 
-📥 Installation
-
+### 📥 Installation
 Clone this repository:
-
+```bash
 git clone https://github.com/steno1/designPattern.git
+```
 
 Navigate to the project directory:
-
+```bash
 cd designPattern
+```
 
 Run the script:
-
+```bash
 node telephone.js
+```
 
-📌 Usage
+---
 
-Features:
+## 📌 Usage
 
-Add phone numbers to the telephone.
+### **Features:**
+- ✅ Add phone numbers to the telephone.
+- ✅ Remove phone numbers from the telephone.
+- ✅ Dial a phone number, triggering notifications to observers.
+- ✅ Add or remove observers that receive updates on dialing events.
 
-Remove phone numbers from the telephone.
-
-Dial a phone number, triggering notifications to observers.
-
-Add or remove observers that receive updates on dialing events.
-
-Example:
+### **Example:**
+```javascript
 // Create Telephone object
 const telephone = new Telephone();
 
@@ -56,22 +59,28 @@ telephone.addObserver(observer2);
 // Add and Dial Phone Numbers
 telephone.addPhoneNumber('2347023232');
 telephone.dialPhoneNumber('2347023232');
+```
 
-📂 Project Structure
+---
 
+## 📂 Project Structure
+```
 designPattern/
 ├── telephone.js
 └── README.md
+```
 
-💡 How It Works
+---
 
-Telephone (Subject): Manages phone numbers and observers. Notifies observers when a number is dialed.
+## 💡 How It Works
+- **Telephone (Subject):** Manages phone numbers and observers. Notifies observers when a number is dialed.
+- **Observer:** Defines how to react to dial notifications.
+- **notifyObservers():** Sends updates to all registered observers.
 
-Observer: Defines how to react to dial notifications.
+---
 
-notifyObservers(): Sends updates to all registered observers.
-
-🧪 Example Output
+## 🧪 Example Output
+```
 Phone number 2347023232 added.
 Phone number 2348031234567 added.
 Dialling 2347023232...
@@ -79,14 +88,15 @@ Observer1: 2347023232
 Observer2: Now Dialling 2347023232
 Phone number 2347023232 removed.
 Phone number 2347023232 has not been added.
+```
 
-📝 Notes
+---
 
-Ensure Node.js is installed to run the script.
+## 📝 Notes
+- Ensure **Node.js** is installed to run the script.
+- The code is designed to be **clean and easy to understand**.
 
-The code is designed to be clean and easy to understand.
+---
 
-📧 Contact
-
-For issues or suggestions, feel free to create an issue on GitHub.
-
+## 📧 Contact
+For issues or suggestions, feel free to create an **issue** on GitHub.
